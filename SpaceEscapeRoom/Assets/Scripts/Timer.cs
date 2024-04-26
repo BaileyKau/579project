@@ -14,8 +14,11 @@ public class Timer : MonoBehaviour
     // Function to handle when numberpad button is pressed
     public void ButtonPressed(string number) 
     {
-        // Add the current number to the current password
-        currentPassword.text += number;
+        if (currentPassword.text.Length <= correctPassword.Length)
+        {
+            // Add the current number to the current password
+            currentPassword.text += number;
+        }
     }
 
     void Start() 
@@ -62,13 +65,6 @@ public class Timer : MonoBehaviour
         {
             // Set to -1 to indicate win
             time = -1;
-        }
-
-        // Check if user has entered password too long
-        else if (currentPassword.text.Length > correctPassword.Length)
-        {
-            // If so, reset
-            currentPassword.text = "";
         }
     }
 }
