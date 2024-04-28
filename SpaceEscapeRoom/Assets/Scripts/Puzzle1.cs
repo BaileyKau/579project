@@ -8,6 +8,7 @@ public class Puzzle1 : MonoBehaviour
     [SerializeField] TextMeshProUGUI current;
     [SerializeField] string correct;
     [SerializeField] string clue;
+    [SerializeField] string def;
 
     int gameState;
 
@@ -17,6 +18,13 @@ public class Puzzle1 : MonoBehaviour
         // Only run if game is happening
         if (gameState == 0) 
         {
+            // Check if text is still default
+            if (current.text == def)
+            {
+                // If so, init
+                current.text = "";
+            }
+
             // Add current number
             current.text += number;
         }
@@ -28,8 +36,8 @@ public class Puzzle1 : MonoBehaviour
         // Set gameState to 0 to indicate game is happening
         gameState = 0;
 
-        // Init current
-        current.text = "";
+        // Init current to default text
+        current.text = def;
     }
 
     // Update is called once per frame
@@ -47,7 +55,7 @@ public class Puzzle1 : MonoBehaviour
             }
 
             // Check if user has entered too many numbers
-            else if (current.text.Length >= correct.Length) 
+            else if (current.text.Length >= correct.Length && (current.text != def))
             {
                 // Init back to blank
                 current.text = "";
