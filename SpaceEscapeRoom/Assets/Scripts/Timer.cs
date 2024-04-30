@@ -60,7 +60,7 @@ public class Timer : MonoBehaviour
                 gameState = -1;
 
                 // Teleport player
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(0);
             }
 
             // Calculate the minutes and seconds
