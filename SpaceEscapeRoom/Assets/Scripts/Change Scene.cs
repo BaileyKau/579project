@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    // Function to move player to main scene
     public void changeScene() 
     {
+        // Teleport player
         SceneManager.LoadScene("Main Scene", LoadSceneMode.Additive);
     }
 

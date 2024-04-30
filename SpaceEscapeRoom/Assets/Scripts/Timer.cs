@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class Timer : MonoBehaviour
     void Start() 
     {
         // Start time
-        time = 300;
+        time = 25;
 
         // Init current password
         currentPassword.text = "";
@@ -56,6 +58,9 @@ public class Timer : MonoBehaviour
 
                 // Set gameState to -1 to indicate loss
                 gameState = -1;
+
+                // Teleport player
+                SceneManager.LoadScene(1);
             }
 
             // Calculate the minutes and seconds
