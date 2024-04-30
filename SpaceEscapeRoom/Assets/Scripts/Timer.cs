@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
     void Start() 
     {
         // Start time
-        time = 25;
+        time = 300;
 
         // Init current password
         currentPassword.text = "";
