@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 
-public class Puzzle2 : MonoBehaviour
+public class Puzzle3 : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI screen;
     [SerializeField] string correct;
@@ -16,7 +16,7 @@ public class Puzzle2 : MonoBehaviour
     int gameState;
 
     // Function to handle when button is pressed
-    public void LeverPulled(string number) 
+    public void VentOpened(string number) 
     {
         // Only run if game is happening
         if (gameState == 0) 
@@ -30,7 +30,7 @@ public class Puzzle2 : MonoBehaviour
     }
 
     // Function to handle when button is pressed
-    public void LeverOff(string number) 
+    public void VentClosed(string number) 
     {
         // Only run if game is happening
         if (gameState == 0) 
@@ -72,7 +72,6 @@ public class Puzzle2 : MonoBehaviour
 
         // Init list of current
         current = new List<char>();
-        current.Add('1');
 
         // Init screen text to default text
         screen.text = def;
