@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-
+// Timer class
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timer;
