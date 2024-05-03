@@ -97,6 +97,10 @@ public class Timer : MonoBehaviour
         }
 
         // Game has won
-        else {}
+        else 
+        {
+            // Teleport player back to menu
+            SceneManager.LoadScene(0);
+        }
     }
 }

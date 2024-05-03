@@ -6,17 +6,33 @@ public class Gravity : MonoBehaviour
 {
 
     [SerializeField] float thrust;
-    [SerializeField] Rigidbody obj1;
+    [SerializeField] Rigidbody player;
 
+    bool toggle;
+
+    // Function to handle button press
     public void ButtonPressed() 
     {
-        obj1.AddForce(transform.up * thrust);
-    } 
+        // Check if toggle is false (gravity on)
+        if (toggle == false) 
+        {
+            player.AddForce(transform.up * thrust);
+            player.useGravity = false;
+        }
+
+        else
+        {
+            player.useGravity = true;
+        }
+
+        // Flip toggle
+        toggle = !toggle;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        toggle = false;
     }
 
     // Update is called once per frame
