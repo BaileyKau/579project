@@ -97,6 +97,9 @@ public class Timer : MonoBehaviour
         }
 
         // Game has won
-        else {}
+        else 
+        {
+            // SceneManager.LoadScene(0);
+        }
     }
 }
