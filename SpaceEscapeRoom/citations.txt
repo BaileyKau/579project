@@ -1,3 +1,14 @@
 https://www.youtube.com/watch?v=POq1i8FyRyQ
 C# documentation: https://learn.microsoft.com/en-us/dotnet/csharp/
 Unity documentation: https://docs.unity.com/
+
+Borrowed assets from Unity Asset Store:
+Metal Crates Pack: https://assetstore.unity.com/packages/2d/textures-materials/metals/metal-crates-pack-8836
+Old "USSR" Lamp: https://assetstore.unity.com/packages/3d/props/electronics/old-ussr-lamp-110400
+Low Poly Stair Light: https://assetstore.unity.com/packages/vfx/shaders/low-poly-stair-light-lite-187530
+Surfaces Lite: https://assetstore.unity.com/packages/2d/textures-materials/surfaces-lite-89739
+Metal FLoor (Rust Low) Texture: https://assetstore.unity.com/packages/2d/textures-materials/metals/metal-floor-rust-low-texture-40351
+SpaceSkies Free: https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503
+
+
+
